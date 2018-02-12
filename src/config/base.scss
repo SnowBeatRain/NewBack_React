@@ -1,0 +1,37 @@
+/*
+样式初始化
+*/
+
+$orange:#FF4D09; //主色
+$borderGray:#DBDBDB; //边框颜色
+$blackfont:#222;//字体颜色
+// 定义组件container公共样式
+@mixin wrap_container{
+  width: 1010px;
+  min-height: 879px;
+  background-color: $borderGray;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-shadow: 0 2px 19px 0 rgba(0, 0, 0, 0.07);
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+input, button{
+  outline: none;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  color:$blackfont;
+}
+a:hover{
+  text-decoration: none;
+}

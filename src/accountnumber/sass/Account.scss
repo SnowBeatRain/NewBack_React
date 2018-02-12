@@ -1,0 +1,117 @@
+@import "../../config/base.scss";
+
+  .account-box{
+    @include wrap_container;
+
+      .trade_query{
+        background-color: #fff;
+        min-height: 859px;
+
+        .account-header{
+          height: 50px;
+          line-height: 49px;
+          border-bottom: 1px solid #DBDBDB;
+          padding-left: 20px;
+          font-size: 16px;
+          color: #222222;
+
+          .but{
+            float: right;
+            margin-right: 20px;
+            width: 100px;
+            height: 30px;
+            background: $orange;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 10px;
+            cursor: pointer;
+          }
+        }
+
+        .list{
+          background-color: #fff;
+          height: 720px;
+          margin-bottom: 10px;
+          padding-left: 20px;
+          margin-top: 30px;
+
+          table{
+            border-collapse: collapse;
+            width: 948px;
+
+            tr{
+              border: 1px solid #C4C4C4;
+            }
+
+            thead{
+              height: 56px;
+              line-height:56px;
+              background-color: #EFEFEF;
+              font-size: 14px;
+
+              th{
+                color: #999;
+                padding-left: 16px;
+                width: 172px;
+                text-align: left;
+              }
+            }
+            tbody{
+
+              tr{
+                height: 50px;
+                line-height:50px;
+              }
+
+              td{
+                width: 172px;
+                padding-left: 16px;
+                font-size: 14px;
+                color: $blackfont;
+                text-align: left;
+
+                span:first-child{
+                  color: $orange;
+                  padding-right: 20px;
+                }
+                span{
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+
+        .page{
+          box-sizing: border-box;
+          background-color: #fff;
+          padding: 0 20px 0 20px;
+          overflow: hidden;
+
+          .txt{
+            line-height:20px;
+            color:$blackfont;
+            font-size:14px;
+          }
+
+          .ant-pagination-item-active{
+            background: $orange;
+            border-color:$orange;
+          }
+
+          .ant-pagination-item-active:focus,
+          .ant-pagination-item-active:hover{
+            background: $orange;
+            border-color:$orange;
+          }
+
+          .ant-pagination-item:focus,
+          .ant-pagination-item:hover{
+            border-color: transparent;
+            color: $blackfont;
+          }
+        }
+      }
+    }

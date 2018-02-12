@@ -1,0 +1,49 @@
+@import "../../config/base";
+.people{
+
+  .qr_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    .qr_code{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 400px;
+      // height: 358px;
+      transform: translate(-50%,-50%);
+      background-color: #fff;
+      canvas {
+        display: block;
+        margin: 20px auto;
+      }
+    }
+    .tit{
+      box-sizing: border-box;
+      background-color: #E6E6E6;
+      height: 53px;
+      line-height:53px;
+      font-size: 16px;
+      padding-left: 33px;
+      font-weight: 700;
+      i{
+        margin-right: 26px;
+        color: #999;
+        transform: rotate(0deg);
+      }
+      span{
+        line-height: 53px;
+        color: $blackfont;
+      }
+
+    }
+
+  }
+
+
+}

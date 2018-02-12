@@ -1,0 +1,116 @@
+@import '../../config/base.scss';
+
+.update-photo{
+  .mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .box{
+    width: 722px;
+    height: 485px;
+    position: fixed;
+    top: 232px;
+    left: 50%;
+    margin-left: -361px;
+    background: #ffffff;
+
+    .header{
+      height: 50px;
+      line-height: 50px;
+      color: #222222;
+      font-size: 16px;
+      padding-left: 20px;
+      background: #e6e6e6;
+      position: relative;
+
+      i{
+        color: #999999;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        line-height: 50px;
+        cursor: pointer;
+      }
+    }
+
+    .title{
+      color: #222222;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 18px 0 10px 20px;
+    }
+
+    textarea{
+      width: 682px;
+      height: 80px;
+      margin-left: 20px;
+      padding: 20px;
+      resize: none;
+    }
+
+    .select{
+      margin-top: 20px;
+      padding: 0 20px;
+      height: 40px;
+      line-height: 40px;
+
+      .left{
+        color: #101010;
+        font-size: 14px;
+        width: 70px;
+        float: left;
+
+        span{
+          color: $orange;
+          padding-right: 5px;
+        }
+      }
+
+      .right {
+        float: left;
+
+        select{
+          width: 350px;
+          height: 40px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .text {
+      margin-top: 20px;
+      padding: 10px 20px;
+      line-height: 14px;
+      font-size: 14px;
+
+      span{
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+
+    .upload{
+      width: 100px;
+      height: 100px;
+      margin-left: 20px;
+      background: #222222;
+    }
+
+    .but{
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14px;
+      background: $orange;
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+}

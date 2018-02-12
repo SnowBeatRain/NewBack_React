@@ -1,0 +1,65 @@
+@import "../../config/base.scss";
+.de-header{
+  height: 80px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 26px 20px 26px 25px;
+  box-shadow: 0 2px 7px rgba(0,0,0,.17);
+
+  .left{
+    float: left;
+    height:28px;
+    font-size:20px;
+    .txt{
+      color: $orange;
+      padding-right: 15px;
+      font-weight: 700;
+    }
+    .line{
+      display: inline-block;
+      height: 20px;
+      width: 2px;
+      position: relative;
+      top:4px;
+    }
+
+  }
+  .right{
+    float:right;
+    font-size:16px;
+       .msg-icon{
+         width: 22px;
+         height: 20px;
+         font-size: 16px;
+         color: $orange;
+       }
+    .msg{
+      color: $blackfont;
+      text-decoration: none;
+      height: 19px;
+      line-height: 19px;
+      width: 28px;
+      font-size:14px;
+      margin-left: 14px;
+      &:hover{
+        color: $blackfont;
+      }
+    }
+    .exit{
+      width: 32px;
+      height: 21px;
+      line-height:21px;
+      color:$orange;
+      margin-left: 16px;
+      cursor: pointer;
+    }
+    .name{
+      height: 24px;
+      width: 55px;
+      line-height:24px;
+      font-size:18px;
+      margin-left: 127px;
+      color: $blackfont;
+    }
+  }
+}

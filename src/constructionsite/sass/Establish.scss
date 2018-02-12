@@ -1,0 +1,106 @@
+@import '../../config/base.scss';
+
+.establish{
+  @include wrap_container;
+
+  .content{
+    min-height: 859px;
+    box-sizing: content-box;
+    font-size: 0px;
+    overflow: hidden;
+    background: #ffffff;
+
+    .title{
+      height: 50px;
+      line-height: 49px;
+      border-bottom: 1px solid $borderGray;
+      padding-left: 20px;
+      font-size: 16px;
+      color: #222222;
+    }
+
+    .text{
+      font-size: 14px;
+      overflow: hidden;
+      margin-top: 19px;
+
+      .left{
+        width: 140px;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        text-align: right;
+        color: #a6a6a6;
+
+        span{
+          padding-right: 5px;
+          color: $orange;
+        }
+      }
+
+      .right{
+        float: left;
+        color: #a6a6a6;
+        margin-left: 10px;
+        line-height: 40px;
+        position: relative;
+
+        input,select,div{
+          width: 350px;
+          height: 40px;
+          line-height: 40px;
+          text-indent: 10px;
+          border: 1px solid $borderGray;
+          box-sizing: border-box;
+          border-radius: 2px;
+        }
+
+        .checkbox{
+          width: 16px;
+          height: 16px;
+          vertical-align: -3px;
+          margin-right: 10px;
+        }
+
+        i{
+          position: absolute;
+          top: 0;
+          left: 320px;
+        }
+
+        .two{
+          margin-left: 20px;
+        }
+
+        .twos{
+            width: 140px;
+        }
+
+        em{
+          position: absolute;
+          top: 0;
+          right: 5px;
+        }
+      }
+    }
+
+    .photo{
+      width: 800px;
+      height: 120px;
+      margin-left: 150px;
+    }
+
+    .push{
+      font-size: 14px;
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #ffffff;
+      background: $orange;
+      margin: auto;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+  }
+}

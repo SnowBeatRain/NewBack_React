@@ -1,0 +1,80 @@
+@import '../../config/base.scss';
+
+.reply-detail {
+  .top {
+    width: 950px;
+    margin: auto;
+    font-size: 14px;
+    color: #101010;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid $borderGray;
+    margin-top: 20px;
+    cursor: pointer;
+    padding-left: 30px;
+
+    .left {
+      color: $orange;
+    }
+
+    span {
+      padding-right: 20px;
+    }
+  }
+
+  .reply-box {
+    overflow: hidden;
+
+    .information {
+      padding: 10px 20px 0;
+      font-size: 14px;
+
+      span {
+        color: #222222;
+      }
+    }
+
+    .message-revert {
+      width: 950px;
+      background: #EFEFEF;
+      padding: 10px;
+      margin: 10px auto;
+
+      p {
+        color: #999999;
+        font-size: 14px;
+      }
+
+      p:last-child {
+        margin-top: 10px;
+      }
+    }
+
+    .reply {
+      display: block;
+      width: 950px !important;
+      height: 51px !important;
+      font-size: 14px;
+      color: #464646;
+      padding: 10px 19px;
+      resize: none;
+      margin: 0 auto !important;
+      border: 1px solid #DBDBDB;
+      background: #EFEFEF;
+    }
+
+    .but {
+      width: 120px;
+      background: #FF4D09;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 20px 0;
+      float: right;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  }
+}

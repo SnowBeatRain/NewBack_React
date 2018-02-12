@@ -1,0 +1,86 @@
+@import "../../config/base.scss";
+
+.people{
+  .addpeople{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    .content{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 529px;
+      height: 358px;
+
+      .tit{
+        box-sizing: border-box;
+        background-color: #E6E6E6;
+        height: 53px;
+        line-height:53px;
+        font-size: 16px;
+        padding-left: 33px;
+        font-weight: 700;
+        i{
+          margin-right: 26px;
+          color: #999;
+          transform: rotate(0deg);
+        }
+        span{
+          line-height: 53px;
+          color: $blackfont;
+        }
+
+      }
+      .list{
+        background-color: #fff;
+        padding-top:23px;
+        overflow: hidden;
+        .list_item{
+          margin-bottom: 20px;
+          overflow: hidden;
+
+          input{
+            border: 1px solid #C4C4C4;
+            border-radius: 2px;
+            margin-left: 10px;
+            width: 350px;
+            height: 40px;
+            float: right;
+            margin-right: 68px;
+            font-size:14px;
+            padding-left: 10px;
+          }
+          　input::-webkit-input-placeholder {
+            color: #a6a6a6;
+          }
+          span{
+            float: right;
+            font-size: 14px;
+            line-height:40px;
+            color: #4A4A4A;
+          }
+
+        }
+        button{
+          display: block;
+          box-sizing: border-box;
+          height: 40px;
+          width: 180px;
+          outline: none;
+          background-color: $orange;
+          border: 1px solid $orange;
+          color: #fff;
+          margin:39px auto;
+        }
+      }
+    }
+  }
+
+}
+

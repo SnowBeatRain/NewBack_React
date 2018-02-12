@@ -1,0 +1,150 @@
+@import '../../config/base.scss';
+.wrap{
+  @include wrap_container;
+  .content{
+    background-color: #fff;
+    padding-bottom: 14px;
+  }
+  .manage{
+    height:60px;
+    padding-left: 20px;
+    border-bottom: 1px solid $borderGray;
+    span{
+      line-height: 60px;
+      color: $blackfont;
+      font-size: 16px;
+      margin-right: 205px;
+      font-weight: 700;
+    }
+    .search {
+      display: inline-block;
+      padding-top: 12px;
+      input[type="text"]{
+        height: 30px;
+        width: 300px;
+        border: 1px solid #A6A6A6;
+        padding-left: 15px;
+
+      }
+      button{
+        width: 100px;
+        height: 30px;
+        line-height:19px;
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: $orange;
+        border: 1px solid $orange;
+        margin-left: 10px;
+
+      }
+    }
+  }
+  .term{
+    padding: 20px;
+    font-size: 14px;
+    .tit{
+      font-weight: 700;
+      color: $blackfont;
+    }
+    .mem , .account{
+      display: flex;
+      width: 405px;
+    }
+    span{
+      flex:1;
+      cursor: pointer;
+      color: #999;
+      &.selected{
+        color: $orange;
+      }
+    }
+    .mem{
+      margin-bottom: 20px;
+    }
+  }
+  .select_item{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 944px;
+    height: 40px;
+    background-color: #EDECED;
+    line-height:40px;
+    span{
+      display: inline-block;
+      color: $blackfont;
+    }
+    .first{
+      font-weight: 700;
+      margin-right: 12px;
+      margin-left: 24px;
+    }
+    .verify{
+      width: 74px;
+      height: 26px;
+      background-color: #fff;
+      line-height:26px;
+      text-align: center;
+      margin-right: 28px;
+      .dot{
+        margin-left: 6px;
+        font-size: 8px;
+        color: #979797;
+        cursor: pointer;
+      }
+    }
+    .clear{
+      cursor: pointer;
+      .iconfont{
+        color: #A6A6A6;
+        margin-right: 7px;
+      }
+    }
+  }
+  .list{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    table{
+      border-collapse: collapse;
+      width: 948px;
+
+      tr{
+        border: 1px solid #C4C4C4;
+      }
+      thead{
+        height: 56px;
+        line-height:56px;
+        background-color: #EFEFEF;
+        font-size: 14px;
+        th{
+          color: #999;
+          padding-left: 16px;
+          text-align: left;
+        }
+      }
+      tbody{
+        tr{
+          height: 50px;
+          line-height:50px;
+        }
+        td{
+          padding-left: 16px;
+          font-size: 14px;
+          color: $blackfont;
+          text-align: left;
+          span{
+            color: #999;
+            margin-right: 10px;
+            cursor: pointer;
+            &.active{
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

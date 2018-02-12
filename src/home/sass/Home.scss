@@ -1,0 +1,248 @@
+@import '../../config/base.scss';
+
+.home{
+  @include wrap_container;
+
+  .content-top{
+    height: 220px;
+    box-sizing: content-box;
+    font-size: 0px;
+    overflow: hidden;
+    box-shadow: 0 2px 19px 0 rgba(0,0,0,0.07);
+    background: #ffffff;
+
+    .left{
+      width: 160px;
+      height: 220px;
+      float: left;
+      margin-left: 80px;
+
+      img{
+        width: 105px;
+        height: 105px;
+        border: 1px solid $borderGray;
+        border-radius: 105px;
+        overflow: hidden;
+        margin-top: 26px;
+        margin-left: 27.5px;
+      }
+
+      div{
+        color: #222222;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px;
+        line-height: 14px;
+      }
+
+      p{
+        color: #999999;
+        line-height: 14px;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    .right{
+      height: 220px;
+      float: left;
+      margin-left: 145px;
+
+      .title{
+        font-size: 18px;
+        color: #222222;
+        line-height: 96px;
+      }
+
+      .box{
+        width: 145px;
+        float: left;
+        height: 60px;
+
+        .quantity{
+          color: #222222;
+          font-size: 30px;
+          line-height: 30px;
+          font-weight: 600;
+        }
+
+        .text{
+          color: #999999;
+          font-size: 14px;
+          line-height: 14px;
+          margin-top: 16px;
+        }
+      }
+
+      .center{
+        width: 200px;
+        text-align: center;
+      }
+
+      .line{
+        float: left;
+        width: 2px;
+        height: 35px;
+        background: $borderGray;
+        margin-top: 17.5px;
+      }
+    }
+  }
+
+  .content-bot{
+    height: 300px;
+    box-sizing: content-box;
+    overflow: hidden;
+    box-shadow: 0 2px 19px 0 rgba(0,0,0,0.07);
+    margin: 20px 0 0 0px;
+    background: #ffffff;
+
+    .title{
+      color: #222222;
+      height: 58px;
+      line-height: 58px;
+      border-bottom: 1px solid $borderGray;
+      box-sizing: content-box;
+
+      .line{
+        width: 4px;
+        height: 24px;
+        margin-top: 18px;
+        background: $orange;
+        float: left;
+      }
+
+      .text{
+        font-size: 18px;
+        float: left;
+        margin-left: 21px;
+      }
+
+      .more{
+        font-size: 14px;
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+
+        i{
+          vertical-align: -1px;
+        }
+      }
+    }
+
+    .box{
+      overflow: hidden;
+      font-size: 0;
+
+      .img-box{
+        width: 210px;
+        height: 162px;
+        margin:30px 0 0 20px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+
+        div{
+          width: 96px;
+          height: 26px;
+          line-height: 26px;
+          background: #f5a623;
+          font-size: 15px;
+          color: #ffffff;
+          position: absolute;
+          top: 20px;
+          left: -10px;
+          text-align: right;
+          border-radius: 13px;
+          padding: 0 10px;
+        }
+      }
+
+      .text{
+        width: 220px;
+        float: left;
+        margin: 30px 0 0 27px;
+
+        .top{
+          font-size: 18px;
+          color: #222222;
+        }
+
+        p{
+          color: #4A4A4A;
+          font-size: 14px;
+          margin-top: 20px;
+          line-height: 14px;
+          text-align: left;
+
+          i{
+            padding-right: 8px;
+          }
+        }
+      }
+
+      .money{
+        width: 160px;
+        height: 210px;
+        line-height: 210px;
+        font-size: 44px;
+        color: #FF4D09;
+        float: left;
+
+        span{
+          font-size: 24px;
+        }
+      }
+
+      .button{
+        float: left;
+
+        .input{
+          width: 100px;
+          height: 30px;
+          background: #FF4D09;
+          color: #ffffff;
+          font-size: 14px;
+          border: 1px solid #FF4D09;
+          text-align: center;
+          line-height: 30px;
+          float: left;
+          margin: 90px 10px 0 0;
+          cursor: pointer;
+        }
+
+        .nobg{
+          background: #ffffff;
+          color: #FF4D09;
+        }
+
+        .nobd{
+          border: none;
+        }
+      }
+
+      p{
+        font-size: 14px;
+        color: #999999;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      p:first-child{
+        margin-top: 50px;
+      }
+
+      .home-add{
+        font-size: 18px;
+        color: $orange;
+        cursor: pointer;
+      }
+    }
+  }
+}

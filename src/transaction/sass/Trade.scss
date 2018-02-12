@@ -1,0 +1,179 @@
+@import "../../config/base.scss";
+
+.transaction{
+  .trade_container{
+    @include wrap_container;
+  .trade{
+    .summary{
+      background-color: #fff;
+      height: 235px;
+      width: 990px;
+      margin-bottom: 20px;
+      .title{
+        font-size:16px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        height: 60px;
+        line-height:60px;
+        border-bottom: 1px solid $borderGray;
+        color: $blackfont;
+        font-weight: 700;
+      }
+      .summary_detail{
+        padding: 50px 20px 0 20px;
+        display: flex;
+        .sum{
+          flex:1;
+          text-align: center;
+          .top{
+            color: #FF4200;
+            font-size: 14px;
+            line-height:19px;
+          }
+          .num{
+            color: $blackfont;
+            font-size: 30px;
+            font-weight: 700;
+            margin-right: 10px;
+          }
+          .line{
+            display: inline-block;
+            height: 35px;
+            width: 2px;
+            background-color:$borderGray;
+          }
+        }
+        .sec{
+          padding-left: 20px;
+          padding-right: 20px;
+          position: relative;
+          .top{
+            color: #59B1FF;
+          }
+          .line{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .line:first-child{
+            left: 0;
+          }
+          .line:last-child{
+            right: 0;
+          }
+
+        }
+        .month{
+          .top{
+            color: #0DAF00;
+          }
+
+        }
+      }
+    }
+
+    .trade_query{
+      background-color: #fff;
+      .search{
+        padding: 30px 0 20px 20px;
+        input[type="text"]{
+          height: 30px;
+          width: 300px;
+          border: 1px solid #A6A6A6;
+          padding-left: 15px;
+
+        }
+        button{
+          width: 100px;
+          height: 30px;
+          line-height:19px;
+          text-align: center;
+          outline: none;
+          color: #fff;
+          background-color: $orange;
+          border: 1px solid $orange;
+          margin-left: 10px;
+
+        }
+      }
+    }
+
+    .list{
+      background-color: #fff;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      table{
+        border-collapse: collapse;
+        width: 948px;
+
+        tr{
+          border: 1px solid #C4C4C4;
+        }
+        thead{
+          height: 56px;
+          line-height:56px;
+          background-color: #EFEFEF;
+          font-size: 14px;
+          th{
+            color: #999;
+            padding-left: 16px;
+            text-align: left;
+          }
+        }
+        tbody{
+          tr{
+            height: 50px;
+            line-height:50px;
+          }
+          td{
+            padding-left: 16px;
+            font-size: 14px;
+            color: $blackfont;
+            text-align: left;
+            span{
+              color: #999;
+              margin-right: 10px;
+              &.active{
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .page{
+      box-sizing: border-box;
+      background-color: #fff;
+      padding: 0 20px 20px 20px;
+      overflow: hidden;
+
+      .txt{
+        line-height:20px;
+        color:$blackfont;
+        font-size:14px;
+      }
+
+      .ant-pagination-item-active{
+        background: $orange;
+        border-color:$orange;
+      }
+      .ant-pagination-item-active:focus,
+      .ant-pagination-item-active:hover{
+        background: $orange;
+        border-color:$orange;
+      }
+      .ant-pagination-item:focus,
+      .ant-pagination-item:hover{
+        border-color: transparent;
+        color: $blackfont;
+      }
+
+    }
+  }
+
+  }
+
+
+}

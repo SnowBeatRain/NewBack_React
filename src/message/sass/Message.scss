@@ -1,0 +1,20 @@
+@import '../../config/base.scss';
+
+.message{
+  @include wrap_container;
+
+  .box{
+    min-height: 859px;
+    overflow: hidden;
+    background: #ffffff;
+
+    .header{
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid #DBDBDB;
+      padding: 0 20px;
+      color: #222222;
+      font-size: 16px;
+    }
+  }
+}

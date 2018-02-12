@@ -1,0 +1,198 @@
+@import '../../config/base.scss';
+
+.upload-effect{
+  @include wrap_container;
+
+  .content{
+    min-height: 859px;
+    box-sizing: content-box;
+    font-size: 0px;
+    background: #ffffff;
+
+    .content-detail{
+      width: 950px;
+      margin: auto;
+      margin-top: 40px;
+      overflow: hidden;
+
+      .header{
+        font-size: 0px;
+        overflow: hidden;
+        position: relative;
+
+        img{
+          width: 44px;
+          height: 44px;
+          border-radius: 22px;
+          float: left;
+        }
+
+        .text{
+          float: left;
+          color: #4a4a4a;
+          font-size: 14px;
+          line-height: 14px;
+          margin-left: 10px;
+
+          .small{
+            font-size: 12px;
+            line-height: 12px;
+            color: #aaaaaa;
+            margin-top: 5px;
+          }
+        }
+
+        .but{
+          position: absolute;
+          padding: 0 20px;
+          height: 28px;
+          text-align: left;
+          line-height: 28px;
+          background: #4a4a4a;
+          float: right;
+          color: #ffffff;
+          font-size: 14px;
+          border-radius: 14px;
+          top: 5px;
+          right: -10px;
+        }
+      }
+
+      .design{
+        font-size: 12px;
+        color: #222222;
+        line-height: 12px;
+        padding: 17px 0 20px 0;
+      }
+
+      .design-title{
+        font-size: 14px;
+        color: #4a4a4a;
+        line-height: 14px;
+        padding: 0 0 10px 0;
+      }
+
+      .effect-photo{
+        width: 100%;
+        overflow: hidden;
+        float: left;
+
+        img{
+          float: left;
+          width: 180px;
+          height: 144px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .title{
+      height: 50px;
+      line-height: 49px;
+      border-bottom: 1px solid $borderGray;
+      padding-left: 20px;
+      font-size: 16px;
+      color: #222222;
+
+      span{
+        color: #999999;
+      }
+    }
+
+    .text{
+      font-size: 14px;
+      overflow: hidden;
+      margin-top: 19px;
+
+      .left{
+        width: 140px;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        text-align: right;
+        color: #a6a6a6;
+
+        span{
+          padding-right: 5px;
+          color: $orange;
+        }
+      }
+
+      .right{
+        float: left;
+        color: #a6a6a6;
+        margin-left: 10px;
+        line-height: 40px;
+        position: relative;
+
+        input,select,div{
+          width: 350px;
+          height: 40px;
+          line-height: 40px;
+          text-indent: 10px;
+          border: 1px solid $borderGray;
+          box-sizing: border-box;
+          border-radius: 2px;
+        }
+
+        i{
+          position: absolute;
+          top: 0;
+          left: 320px;
+        }
+
+        .two{
+          margin-left: 20px;
+        }
+
+        .twos{
+          width: 140px;
+        }
+
+        em{
+          position: absolute;
+          top: 0;
+          right: 5px;
+        }
+
+        textarea{
+          display: block;
+          padding: 10px;
+          resize: none;
+          width: 800px;
+          height: 80px;
+        }
+      }
+    }
+
+    .photo{
+      width: 150px;
+      height: 120px;
+      background: #222222;
+      margin-left: 150px;
+    }
+
+    .add-again{
+      text-align: center;
+      font-size: 14px;
+      color: $orange;
+      margin-top: 45px;
+      cursor: pointer;
+    }
+
+    .push{
+      font-size: 14px;
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #ffffff;
+      background: $orange;
+      margin: auto;
+      margin-top: 40px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  }
+}

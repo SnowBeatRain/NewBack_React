@@ -1,0 +1,33 @@
+@import '../../config/base.scss';
+.company{
+  .page{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0 20px 0 20px;
+    overflow: hidden;
+
+    .txt{
+      line-height:20px;
+      color:$blackfont;
+      font-size:14px;
+    }
+
+    .ant-pagination-item-active{
+      background: $orange;
+      border-color:$orange;
+    }
+    .ant-pagination-item-active:focus,
+    .ant-pagination-item-active:hover{
+      background: $orange;
+      border-color:$orange;
+    }
+    .ant-pagination-item:focus,
+    .ant-pagination-item:hover{
+      border-color: transparent;
+      color: $blackfont;
+    }
+
+  }
+
+
+}

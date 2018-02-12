@@ -1,0 +1,58 @@
+@import '../../config/base.scss';
+
+.talk{
+  font-size: 14px;
+  color: #4a4a4a;
+  position: relative;
+  overflow: hidden;
+
+  .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    i{
+      vertical-align: -3px;
+      padding-right: 5px;
+    }
+  }
+
+  input{
+    display: block;
+    width: 100% !important;
+    height: 51px !important;
+    font-size: 14px;
+    color: #464646;
+    padding: 10px 19px;
+    resize: none;
+    margin: 0 !important;
+    border: 1px solid $borderGray;
+    background: #EFEFEF;
+  }
+
+  .submit{
+    width: 120px;
+    background: $orange;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 20px 0;
+    float: right;
+    cursor: pointer;
+  }
+
+  .revert{
+    background: #EFEFEF;
+    padding: 0 5px 10px;
+    margin-bottom: 10px;
+
+    p{
+      color: #999999;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}

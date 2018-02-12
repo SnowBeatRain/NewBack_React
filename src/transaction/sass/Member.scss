@@ -1,0 +1,115 @@
+@import "../../config/base";
+.member{
+  background-color: #fff;
+  .title{
+    box-sizing: border-box;
+    padding-left: 20px;
+    height: 60px;
+    line-height:60px;
+    border-bottom: 1px solid $borderGray;
+    color: $blackfont;
+    font-weight: 700;
+  }
+  .service{
+    padding-bottom: 20px;
+    .top_service{
+      height: 110px;
+      box-sizing: border-box;
+      padding: 0 20px 20px 20px;
+      .tit{
+        line-height:28px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 40px;
+        color: $blackfont;
+      }
+      button{
+        box-sizing: border-box;
+        width: 100px;
+        height: 30px;
+        outline: none;
+        border:1px solid $orange;
+        background-color: $orange;
+        color: #fff;
+        margin-top: 60px;
+        margin-left: 275px;
+      }
+    }
+
+
+    .list{
+      background-color: #fff;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      table{
+        border-collapse: collapse;
+        width: 948px;
+
+        tr{
+          border: 1px solid #C4C4C4;
+        }
+        thead{
+          height: 56px;
+          line-height:56px;
+          background-color: #EFEFEF;
+          font-size: 14px;
+          th{
+            color: #999;
+            padding-left: 16px;
+            text-align: left;
+          }
+        }
+        tbody{
+          tr{
+            height: 50px;
+            line-height:50px;
+          }
+          td{
+            padding-left: 16px;
+            font-size: 14px;
+            color: $blackfont;
+            text-align: left;
+            span{
+              color: #999;
+              margin-right: 10px;
+              &.active{
+                color: $orange;
+              }
+            }
+
+          }
+          td.last{
+            line-height:50px;
+            width: 241px;
+            button{
+              box-sizing: border-box;
+              height: 30px;
+              line-height:50px;
+              width: 100px;
+              outline: none;
+              border: 1px solid $orange;
+              line-height: 30px;
+            }
+            .btn_edit{
+              margin-right: 10px;
+              color: #fff;
+              background-color: $orange;
+            }
+            .btn_remove{
+              background-color: #fff;
+              color: $orange;
+            }
+
+          }
+
+
+        }
+      }
+
+    }
+  }
+
+
+
+}

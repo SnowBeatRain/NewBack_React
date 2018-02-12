@@ -1,0 +1,91 @@
+@import '../../config/base.scss';
+
+.edit{
+  @include wrap_container;
+
+  .box {
+    min-height: 859px;
+    box-sizing: content-box;
+    overflow: hidden;
+    background: #ffffff;
+
+    .header{
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid $borderGray;
+      padding: 0 20px;
+      color: #222222;
+      font-size: 16px;
+    }
+
+    .text{
+      padding: 0 20px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #c4c4c4;
+      overflow: hidden;
+
+      .left{
+        width: 120px;
+        text-align: right;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+
+        span{
+          color: $orange;
+        }
+      }
+
+      .right{
+        float: left;
+        padding-left: 20px;
+
+        input{
+          width: 350px;
+          height: 40px;
+          line-height: 40px;
+          border: 1px solid $borderGray;
+          text-indent: 10px;
+        }
+
+        textarea{
+          width: 750px;
+          height: 120px;
+          padding: 10px 10px;
+          resize:none;
+          border: 1px solid $borderGray;
+        }
+
+        p{
+          width: 350px;
+          height: 40px;
+          line-height: 40px;
+        }
+
+        .upload{
+          width: 260px;
+          height: 93px;
+
+          .clearfix{
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+      }
+    }
+
+    .but{
+      width: 180px;
+      height: 40px;
+      background: $orange;
+      line-height: 40px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14px;
+      margin: auto;
+      margin-top: 300px;
+      cursor: pointer;
+    }
+  }
+}

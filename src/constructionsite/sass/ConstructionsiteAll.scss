@@ -1,0 +1,194 @@
+@import '../../config/base.scss';
+
+.constructionsiteAll{
+  overflow-y: scroll;
+  @include wrap_container;
+
+  .content-bot{
+    min-height: 859px;
+    box-sizing: content-box;
+    overflow: hidden;
+    box-shadow: 0 2px 19px 0 rgba(0,0,0,0.07);
+    background: #ffffff;
+
+    .category{
+      height: 50px;
+      line-height: 48px;
+      width: 100%;
+      padding-left: 20px;
+      box-sizing: border-box;
+
+      .child{
+        margin-right: 80px;
+        float: left;
+        color: #222222;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .elect{
+        border-bottom: 2px solid $orange;
+      }
+    }
+
+    .title{
+      color: #222222;
+      height: 58px;
+      line-height: 58px;
+      border-bottom: 1px solid $borderGray;
+      box-sizing: content-box;
+
+      .text{
+        font-size: 18px;
+        float: left;
+        margin-left: 21px;
+      }
+
+      .constructionsite-establish{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        background: $orange;
+        color: #ffffff;
+        margin: 15px 20px 0 0;
+        padding: 0;
+
+        i{
+          vertical-align: -1px;
+        }
+      }
+    }
+
+    .box{
+      overflow: hidden;
+      font-size: 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $borderGray;
+
+      .img-box{
+        width: 210px;
+        height: 150px;
+        margin:30px 0 0 20px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        float: left;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+
+        div{
+          width: 96px;
+          height: 26px;
+          line-height: 26px;
+          background: #f5a623;
+          font-size: 15px;
+          color: #ffffff;
+          position: absolute;
+          top: 20px;
+          left: -10px;
+          text-align: right;
+          border-radius: 13px;
+          padding: 0 10px;
+        }
+      }
+
+      .text{
+        width: 220px;
+        float: left;
+        margin:30px 0 0 27px;
+
+        .top{
+          font-size: 18px;
+          color: #222222;
+        }
+
+        p{
+          color: #4A4A4A;
+          font-size: 14px;
+          margin-top: 20px;
+
+          i{
+            padding-right: 8px;
+          }
+        }
+      }
+
+      .money{
+        width: 160px;
+        height: 210px;
+        line-height: 210px;
+        font-size: 44px;
+        color: #FF4D09;
+        float: left;
+
+        span{
+          font-size: 24px;
+        }
+      }
+
+      .button{
+        float: left;
+
+        .input{
+          width: 100px;
+          height: 30px;
+          background: #FF4D09;
+          color: #ffffff;
+          font-size: 14px;
+          border: 1px solid #FF4D09;
+          text-align: center;
+          line-height: 30px;
+          float: left;
+          margin: 90px 10px 0 0;
+          cursor: pointer;
+        }
+
+        .nobg{
+          background: #ffffff;
+          color: #FF4D09;
+        }
+
+        .nobd{
+          border: none;
+        }
+      }
+    }
+
+    .page{
+      box-sizing: border-box;
+      background-color: #fff;
+      padding: 0 20px 0 20px;
+      overflow: hidden;
+      margin: 10px 0;
+
+      .txt{
+        line-height:20px;
+        color:$blackfont;
+        font-size:14px;
+      }
+
+      .ant-pagination-item-active{
+        background: $orange;
+        border-color:$orange;
+      }
+      .ant-pagination-item-active:focus,
+      .ant-pagination-item-active:hover{
+        background: $orange;
+        border-color:$orange;
+      }
+      .ant-pagination-item:focus,
+      .ant-pagination-item:hover{
+        border-color: transparent;
+        color: $blackfont;
+      }
+
+    }
+  }
+}
